@@ -1,44 +1,44 @@
 table, td {
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    border: 3px solid lightgray;
-    border-collapse: collapse;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid lightgray;
+  border-collapse: collapse;
 }
 
 thead {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 img {
-    margin-top: 7px;
-    margin-bottom: 7px;
-    height: 120px;
-    width: 150px;
-    border-radius: 20%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  height: 120px;
+  width: 150px;
+  border-radius: 20%;
 }
 
 #orange_stone {
-    background-color: #ffa500;
+  background-color: #ffa500;
 }
 
 #green_stone {
-    background-color: #008000;
+  background-color: #008000;
 }
 
 #blue_stone {
-    background-color: #0068ad;
+  background-color: #0068ad;
 }
 
 #yellow_stone {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 #red_stone {
-    background-color: red;
+  background-color: red;
 }
 
 #purple_stone {
-    background-color: #9966ff;
+  background-color: #9966ff;
 }
