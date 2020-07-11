@@ -1,0 +1,53 @@
+.card {
+  position: relative;
+  display: inline-block;
+  margin: 50px 5px 0 5px;
+  width: 270px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.container-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.alias {
+  color: white;
+  font-size: 12px;
+}
+
+.real_name {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 9px;
+}
+
+img {
+  margin-left: 10px;
+  position: absolute;
+  height: 182px;
+  bottom: 0;
+}
+
+#spider-man img{
+  top: 0;
+}
+
+#captain_america {
+  background: linear-gradient(#4568DC, #B06AB3);
+}
+
+#iron_man{
+  background: linear-gradient(#e52d27, #b31217);
+}
+
+#black_widow {
+  background: linear-gradient(to right, #000, #61045F);
+}
+
+#spider-man {
+  background: linear-gradient(#e52d27, #000);
+}
