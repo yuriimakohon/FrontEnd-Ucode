@@ -1,8 +1,7 @@
 .match {
   position: relative;
-  display: block;
-  margin-top: 150px;
-  margin-left: 240px;
+  top: -200px;
+  transform: scale(0.5);
 }
 
 .fire {
@@ -10,7 +9,7 @@
   left: -180px;
   height: 400px;
   width: 400px;
-  transform: rotate(45deg);
+  transform: scaleX(0.9) rotate(45deg);
   background: radial-gradient(ellipse at top left, #ff3c00, #ffa200);
   border-radius: 0 50% 50% 50%;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.75);
