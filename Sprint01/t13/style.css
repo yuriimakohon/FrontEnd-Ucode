@@ -1,0 +1,16 @@
+img {
+  float: left;
+  height: 250px;
+}
+
+@media print {
+  img {
+    float: none;
+    height: 400px;
+  }
+
+  p {
+    font-size: smaller;
+    text-align: left;
+  }
+}
