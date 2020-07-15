@@ -1,0 +1,30 @@
+.day {
+  text-align: center;
+  display: inline-flex;
+}
+
+.day:hover {
+  box-shadow: 0 0 10px black;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  padding: 10px 0 0 0;
+}
+
+.date {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  background: #2b94b2;
+  padding: 0 20px;
+}
+
+.temperature {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 2em;
+}
