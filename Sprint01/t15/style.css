@@ -1,0 +1,12 @@
+img {
+  height: 80px;
+}
+
+#gauntlet {
+  height: 280px;
+}
+
+#gauntlet:hover + table tr:nth-child(odd) td:nth-child(odd),
+#gauntlet:hover + table tr:nth-child(even) td:nth-child(even) {
+  opacity: 0;
+}
