@@ -1,0 +1,29 @@
+.circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transition: background 0.5s;
+  background: green;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: calc(100vw - 310px);
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+.circle:hover {
+  transition: background 2s;
+  background: red;
+}
