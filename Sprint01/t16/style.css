@@ -1,9 +1,7 @@
 * {
-  text-transform: uppercase;
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
-  transition: all .1s ease;
 }
 
 h1 {
@@ -16,7 +14,6 @@ h1 {
   position: relative;
   display: inline-block;
 }
-
 
 .drop-btn {
   background-color: lightgray;
