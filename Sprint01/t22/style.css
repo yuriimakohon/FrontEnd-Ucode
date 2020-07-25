@@ -1,0 +1,225 @@
+* {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background: rgb(64, 71, 80);
+}
+
+.main-frame {
+  position: relative;
+  padding: 30px;
+  width: 600px;
+  height: 400px;
+  margin-top: 30px;
+  border: 1px solid rgb(96, 99, 104);
+  background: rgb(74, 82, 93);
+}
+
+.settings-row {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.settings-row {
+  display: flex;
+}
+
+/* Settings item Fonts */
+.settitem-fonts {
+  margin-right: 100px;
+}
+
+.settitem-fonts select {
+  padding: 7px;
+  margin-top: 10px;
+  background: rgb(55, 62, 70);
+  height: 30px;
+  width: 180px;
+  border-radius: 1px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.settitem-fonts::after {
+  content: '';
+  position: absolute;
+  border: 2px solid gainsboro;
+  border-left: none;
+  border-top: none;
+  width: 11px;
+  height: 11px;
+  top: 83px;
+  left: 183px;
+  transform: rotate(45deg);
+}
+
+/* Settings item UI */
+.settitem-ui {
+  transform: translateY(45px);
+  display: flex;
+  height: 30px;
+}
+
+.settitem-ui span {
+  transform: translateY(5px);
+  margin-right: 180px;
+}
+
+.settitem-ui #checkbox-ui {
+  display: none;
+}
+
+.settitem-ui #checkbox-ui:checked + label {
+  background: rgb(90, 149, 229);
+}
+
+.settitem-ui label {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: rgb(51, 58, 65);
+  border-radius: 20px;
+}
+
+.settitem-ui label::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgb(97, 187, 166);
+  transition: 0.3s;
+}
+
+.settitem-ui #checkbox-ui:checked + label::after {
+  left: 33px;
+  transition: 0.3s;
+}
+
+/* Settings item Weight */
+.settitem-weight {
+  margin-right: 110px;
+}
+
+.settitem-weight input {
+  display: none;
+}
+
+.settitem-weight label {
+  position: relative;
+  margin-right: 40px;
+  left: 30px;
+}
+
+.settitem-weight label::before {
+  content: '';
+  position: absolute;
+  border: 2px solid gainsboro;
+  background: rgb(51, 58, 65);
+  left: -30px;
+  width: 1em;
+  height: 1em;
+}
+
+.settitem-weight input:checked + label::after {
+  content: '✓';
+  position: absolute;
+  left: -25px;
+  color: rgb(97, 187, 166);
+}
+
+/* Settings item Color */
+.settitem-color input {
+  display: none;
+}
+
+.settitem-color input:checked + .color-circle::after {
+  content: '✓';
+  position: absolute;
+  top: 0.4em;
+  left: 0.6em;
+}
+
+.color-circle {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin-right: 30px;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+}
+
+.blue {
+  background: rgb(82, 117, 180);
+}
+.green {
+  background: rgb(118, 183, 166);
+}
+.pink {
+  background: rgb(193, 106, 197);
+}
+.yellow {
+  background: rgb(220, 215, 120);
+}
+.orange {
+  background: rgb(199, 132, 101);
+}
+
+/* Settings item Size */
+.settitem-size input {
+  position: relative;
+  width: 200px;
+  -webkit-appearance: none;
+  background: transparent;
+  outline: none;
+}
+
+.settitem-size input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  transform: translateY(-0.7em);
+  width: 1.7em;
+  height: 1.7em;
+  background: rgb(118, 183, 166);
+  border-radius: 50%;
+}
+
+.settitem-size input::-webkit-slider-runnable-track {
+  height: 2px;
+  background: rgb(51, 58, 65);
+}
+
+.settitem-size input::before {
+  content: 'A';
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+
+.settitem-size input::after {
+  content: 'A';
+  font-size: 2em;
+  position: absolute;
+  top: 20px;
+  right: 2px;
+}
+
+/* Toolbar */
+.toolbar {
+  position: absolute;
+  background: rgb(51, 58, 65);
+  width: 60px;
+  height: 300px;
+  top: 80px;
+  left: calc(100% + 2px);
+  border-radius: 0 20px 20px 0;
+}
+
+.toolbar img {
+  padding: 16px 9px;
+  width: 40px;
+}

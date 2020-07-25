@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato"/>
+</head>
+
+<body>
+  <div class="main-frame">
+    <div class="settings-row">
+      <div class="settitem-fonts">
+        <span>Typeface</span><br><br>
+        <select>
+          <option>Acunim Pro</option>
+          <option>Comic Sans</option>
+          <option disabled>Times New Roman</option>
+        </select>
+      </div>
+      <div class="settitem-ui">
+        <span>Dark UI</span>
+        <input id="checkbox-ui" type="checkbox">
+        <label for="checkbox-ui"></label>
+      </div>
+    </div>
+    <div class="settings-row">
+      <div class="settitem-weight">
+        <span>Weight</span><br><br>
+        <input id="checkbox-reg" type="checkbox">
+        <label for="checkbox-reg">Regular</label>
+        <input id="checkbox-bold" type="checkbox">
+        <label for="checkbox-bold">Bold</label>
+      </div>
+      <div class=settitem-color>
+        <span>Color</span><br><br>
+        <div style="display: flex;">
+          <input type="checkbox" id="blue">
+          <label class="color-circle blue" for="blue"></label>
+          <input type="checkbox" id="green">
+          <label class="color-circle green" for="green"></label>
+          <input type="checkbox" id="pink">
+          <label class="color-circle pink" for="pink"></label>
+          <input type="checkbox" id="yellow">
+          <label class="color-circle yellow" for="yellow"></label>
+          <input type="checkbox" id="orange">
+          <label class="color-circle orange" for="orange"></label>
+        </div>
+      </div>
+    </div>
+    <div class="settings-row">
+      <div class="settitem-size">
+        <span>Size</span><br><br>
+        <input type="range">
+      </div>
+    </div>
+    <div class="toolbar">
+      <img src="assets/images/artistic-brush.png" alt="brush">
+      <img src="assets/images/user-icon.png" alt="user">
+      <img src="assets/images/sms-speech-bubble.png" alt="sms">
+      <img src="assets/images/computer-screen.png" alt="screen">
+    </div>
+  </div>
+</div>
+</body>
+</html>

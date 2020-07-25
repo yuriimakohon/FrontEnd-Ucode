@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+
+.comics-page {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  .comics-page {
+    background: red;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .comics-page {
+    background: white;
+    width: 590px;
+  }
+  #panel-1, #panel-2 {
+    height: 205px;
+  }
+  #panel-3, #panel-4, #panel-5 {
+    height: 175px;
+  }
+  #panel-6, #panel-7, #panel-8, #panel-9 {
+    height: 355px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .comics-page {
+    background: white;
+    width: 1286px;
+  }
+  #panel-1, #panel-2 {
+    height: 275px;
+  }
+  #panel-3, #panel-4, #panel-5 {
+    height: 227px;
+  }
+  #panel-6, #panel-7, #panel-8, #panel-9 {
+    height: 445px;
+  }
+  #panel-3, #panel-6 {
+    margin-right: 10px;
+  }
+  #panel-1 #panel-4, #panel-8 {
+    margin-right: 5px;
+  }
+  #panel-7 {
+    margin-right: 60px;
+  }
+}
