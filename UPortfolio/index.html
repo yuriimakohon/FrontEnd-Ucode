@@ -10,7 +10,7 @@
 <body>
   <div class="navbar">
     <div class="navbar-items">
-      <a href="#main">MAIN</a>
+      <a href="#">MAIN</a>
       <a href="#">ABOUT</a>
       <a href="#">GALLERY</a>
       <a href="#">PROJECTS</a>
@@ -24,29 +24,37 @@
     </div>
   </div>
   <div id="main">
-    <div class="container-hello">
-      <h2>Hello,<br>my name is</h2>
-      <h1>Yurii Makohon</h1>
+    <div class="main-left">
+      <div class="greetings">
+        <h2>Hello,<br>my name is</h2>
+        <h1>Yurii Makohon</h1>
+      </div>
+      <h3>And I'm a</h3>
       <input type="radio" id="check-web_developer" name="specialization"></input>
       <label for="check-web_developer">Web Developer/</label>
       <br>
       <input type="radio" id="check-digital_artist" name="specialization"></input>
       <label for="check-digital_artist">Digital Artist/</label>
     </div>
-    <div class="container-shortinfo">
-      <div id="shortinfo-artis">I am working with digital painting in the LowPoly style.<br>
-        Make portraits, installations, designs in this direction.<br>
-        I use Adobe Photoshop and Illustator.
+    <div class="main-right">
+      <div class="short-info">
+        <span>I am working with digital painting in the LowPoly style.<br>
+          Make portraits, installations, designs in this direction.<br>
+          I use Adobe Photoshop and Illustator.</span>
       </div>
-      <div class="container-button">
-        <a class="button" href="#about">MORE ABOUT</a>
+      <div class="btn-container">
+        <div class="btn-more_about">
+          <a>MORE ABOUT</a>
+        </div>
       </div>
-      <div id="shortinfo-work">
-        If you are interested in my work - look in the
+      <div class="look-work">
+        <span>If you are interested in my work - look in the</span>
+        <div class="btn-container">
+          <div class="btn-gallery">
+            <a>GALLERY</a>
+          </div>
+        </div>
       </div>
-      <!-- <div class="container-button">
-        <a class="button" href="#">GALLERY</a>
-      </div> -->
     </div>
   </div>
 </body>
