@@ -6,6 +6,11 @@
   <title>Yurii Makohon - Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    function change_greetings_align(params) {
+      document.getElementById("greetings").style.textAlign = "end";
+    }
+  </script>
 </head>
 <body>
   <div class="navbar">
@@ -25,12 +30,12 @@
   </div>
   <div id="main">
     <div class="main-left">
-      <div class="greetings">
+      <div id="greetings">
         <h2>Hello,<br>my name is</h2>
         <h1>Yurii Makohon</h1>
       </div>
       <h3>And I'm a</h3>
-      <input type="radio" id="check-web_developer" name="specialization"></input>
+      <input type="radio" id="check-web_developer" name="specialization" onchange="change_greetings_align()"></input>
       <label for="check-web_developer">Web Developer/</label>
       <br>
       <input type="radio" id="check-digital_artist" name="specialization"></input>
