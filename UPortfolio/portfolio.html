@@ -4,8 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yurii Makohon - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="portfolio.css">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    function show_mainright() {
+      document.getElementById("main-right").style.visibility = "visible";
+      document.getElementById("main-right").style.opacity = "1";
+      document.getElementById("greetings").style.right = "0%";
+    }
+    function show_shortinfo_web() {
+      document.getElementById("short-info-artist").style.display = "none";
+      document.getElementById("short-info-web").style.display = "block";
+      document.getElementById("background-0").style.opacity = "0";
+      document.getElementById("background-1").style.opacity = "0";
+    }
+    function show_shortinfo_artist() {
+      document.getElementById("short-info-web").style.display = "none";
+      document.getElementById("short-info-artist").style.display = "block";
+      document.getElementById("background-0").style.opacity = "0";
+      document.getElementById("background-1").style.opacity = "1";
+    }
+  </script>
 </head>
 <body id="body">
 
@@ -47,6 +66,16 @@
   </svg>
 
   <div id=background-0></div>
+  <div id="background-1">
+    <svg id="brush_background">
+      <use xlink:href="#brush"></use>
+    </svg>
+  </div>
+  <div id="background-2">
+    <svg id="code_background">
+      <use xlink:href="#code"></use>
+    </svg>
+  </div>
   <div class="navbar">
     <div class="navbar-items">
       <a href="#">MAIN</a>
@@ -62,50 +91,43 @@
     </div>
   </div>
   <div id="main">
-    <div id="main__inner">
-      <div class="main-left">
-        <div id="greetings">
-          <h2>Hello,<br>my name is</h2>
-          <h1>Yurii</h1>
-        </div>
+    <div class="main-left">
+      <div id="greetings">
+        <h2>Hello,<br>my name is</h2>
+        <h1>Yurii</h1>
       </div>
-      <div class="main-right" id="main-right">
-        <div class="short-info">
-          <div id="short-info-web">
-            <span>Web developer</span>
-            <svg>
-              <use xlink:href="#code"></use>
-            </svg>
-            <br>
-            I am a future web developer and web designer.<br>
-            Before that, I wrote projects in C.<br>
-            Worked with ui / ux for applications.
-          </div>
-          <div id="short-info-artist">
-            <span>Digital artist</span>
-            <svg>
-              <use xlink:href="#brush"></use>
-            </svg>
-            <br>
-            I am working with digital painting in the LowPoly style.<br>
-            Make portraits, installations, designs in this direction.<br>
-            I use Adobe Photoshop and Illustator.
-          </div>
-        </div>
-        <div class="btn-container">
-          <div class="btn">
-            <a>MORE ABOUT</a>
-          </div>
-        </div>
-      </div> 
+      <h3>And I'm a</h3>
+      <input type="radio" id="check-web_developer" name="specialization" onchange="show_mainright(), show_shortinfo_web()"></input>
+      <label for="check-web_developer">Web Developer/</label>
+      <br>
+      <input type="radio" id="check-digital_artist" name="specialization" onchange="show_mainright(), show_shortinfo_artist()"></input>
+      <label for="check-digital_artist">Digital Artist/</label>
     </div>
-    <div class="look-work">
-      <span>If you are interested in my work - look in the</span>
-      <div class="btn-container">
-        <div class="btn btn--works">
-          <a>PROJECTS</a>
+    <div class="main-right" id="main-right">
+      <div class="short-info">
+        <div id="short-info-web">
+          I am a future web developer and web designer.<br>
+          Before that, I wrote projects in C.<br>
+          Worked with ui / ux for applications.
+        </div>
+        <div id="short-info-artist">
+          I am working with digital painting in the LowPoly style.<br>
+          Make portraits, installations, designs in this direction.<br>
+          I use Adobe Photoshop and Illustator.
         </div>
       </div>
+      <div class="btn-container">
+        <div class="btn">
+          <a>MORE ABOUT</a>
+        </div>
+      </div>
+      <div class="look-work">
+        <span>If you are interested in my work - look in the</span>
+        <div class="btn-container">
+          <div class="btn btn--works">
+            <a>PROJECTS</a>
+          </div>
+        </div>
     </div>
   </div> <!-- /MAIN -->
 
