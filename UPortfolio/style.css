@@ -3,10 +3,44 @@
   color: white;
 }
 
-body {
-  background: linear-gradient(-45deg, #7708ff, #7b0089);
-  background-repeat: no-repeat;
-  height: 100vh;
+#background-0 {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vw;
+  width: 100%;
+  background: linear-gradient(-45deg, #7708ff, #a9044c);
+  transition: .5s linear;
+  z-index: -1;
+}
+
+#background-1 {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vw;
+  width: 100%;
+  background: linear-gradient(-45deg, #7708ff, #a90496);
+  transition: .5s linear;
+  z-index: -2;
+}
+
+#background-2 {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100vw;
+  width: 100%;
+  background: linear-gradient(45deg, #7708ff, #a90496);
+  z-index: -3;
+}
+
+#brush_background,
+#code_background {
+  fill: white;
+  opacity: 0.7;
+  margin-top: 5vw;
+  width: 20vw;
 }
 
 .navbar {
@@ -90,6 +124,13 @@ body {
   margin-block-end: 1vw;
 }
 
+#greetings {
+  text-align: center;
+  position: relative;
+  right:  -50%;
+  transition: .3s ease-in-out;
+}
+
 #greetings h1,
 #greetings h2 {
   margin-block-start: 0;
@@ -97,12 +138,12 @@ body {
 }
 
 #greetings h2 {
-  font-size: 4vw;
+  font-size: 6vw;
   font-weight: 500;
 }
 
 #greetings h1 {
-  font-size: 6vw;
+  font-size: 15vw;
 }
 
 .main-left input {
@@ -139,6 +180,7 @@ body {
   border: none;
   background: none;
   color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
   transition: 0.2s;
 }
 
@@ -153,49 +195,55 @@ body {
 }
 
 .main-right {
-  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease;
 }
 
 .short-info {
-  padding-bottom: 0.6vw;
-  border-bottom: 0.3vw white solid;
   margin-bottom: 2vw;
 }
 
-.short-info span {
+.short-info div {
+  position: relative;
   font-size: 1.9vw;
+  line-height: 1.5;
+  padding-bottom: 0.6vw;
+  border-bottom: 0.3vw white solid;
+  transition: 1s ease;
 }
 
 .btn-container {
   display: flex;
 }
 
-.btn-more_about {
+.btn {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5vw 1.5vw;
   background: #e5e5e5;
   border-radius: 0.3vw;
+  cursor: pointer;
   opacity: 80%;
-  transition: 0.2s;
+  transition: .2s linear;
 }
 
-.btn-more_about a {
+.btn a {
   font-size: 1.5vw;
   background: -webkit-linear-gradient(left, #7708ff, #7b0089);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.btn-more_about:hover {
+.btn:hover {
   opacity: 100%;
   transform: scale(1.1);
   transition: 0.2s;
 }
 
 .look-work {
-  margin-top: 7vw;
+  margin-top: 15vw;
   text-align: center;
 }
 
@@ -203,7 +251,7 @@ body {
   font-size: 2vw;
 }
 
-.btn-gallery {
+.btn--works {
   display: inline-block;
   margin-top: 3vw;
   margin-left: auto;
@@ -212,18 +260,16 @@ body {
   background: #e5e5e5;
   border-radius: 0.3vw;
   opacity: 80%;
-  transition: 0.2s;
 }
 
-.btn-gallery a {
+.btn--works a {
   font-size: 2.5vw;
   background: -webkit-linear-gradient(left, #7708ff, #7b0089);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.btn-gallery:hover {
+.btn--works:hover {
   opacity: 100%;
   transform: scale(1.1);
-  transition: 0.2s;
 }
