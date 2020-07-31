@@ -7,8 +7,16 @@ body {
     background: linear-gradient(45deg, #7708ff, #a90496, red);
     background-repeat: no-repeat;
     height: 100vw;
+    margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  margin: 0 5%;
+}
 
 .navbar {
   overflow: hidden;
@@ -77,6 +85,7 @@ body {
 
 #greetings {
   text-align: end;
+  text-shadow:  1vw 1vw 1vw rgba(0, 0, 0, 0.5);
 }
 
 #greetings h1,
@@ -135,6 +144,7 @@ body {
   font-weight: bold;
   font-size: 1.5vw;
   text-transform: uppercase;
+  text-shadow:  .1vw .1vw .1vw rgba(0, 0, 0, 0.5);
 }
 
 #short-info-web svg,
@@ -188,6 +198,58 @@ body {
   transform: scale(1.1);
 }
 
+/* ======| ABOUT |===== */
+
+#about {
+  margin-top: 5vw;
+}
+
+#about h1 {
+  padding: 0 5%;
+
+  font-size: 2vw;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.about--inner {
+  display: grid;
+  gap: 3%;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5vw 0;
+}
+
+.about-item {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  text-shadow:  .1vw .1vw .1vw rgba(0, 0, 0, 0.5);
+}
+
+.about-item ul {
+  list-style-type: none;
+  margin: 1vw 0;
+  padding: 0;
+
+  font-weight: 600;
+  text-shadow: none;
+  font-size: 1.3vw;
+  line-height: 2;
+}
+
+.about-item li {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.about-item span {
+  margin-left: 1vw;
+  color: rgba(255, 255, 255, 0.8);
+
+  text-transform: none;
+  font-weight: 500;
+  font-style: italic;
+}
 
 /* ======| MEDIA |===== */
 
